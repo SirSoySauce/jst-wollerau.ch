@@ -1,8 +1,8 @@
 ######################## custom scripts & styles ####################
 
 # Add custom assets relative to /static or via https
-logo_on_white: "/img/logo-b.svg"
-logo_on_black: "/img/logo-w.svg"
+logo_on_white: "/img/jst_logo-black_on_white.svg"
+logo_on_black: "/img/jst_logo-white_on_black"
 custom_js: []
 custom_css: []
 
@@ -12,7 +12,7 @@ custom_css: []
 images: ["/img/social-share.png"]
 
 github:
-  repo_url: "https://github.com/username/repo/blob/master"
+  repo_url: " "
   show_edit_link: true
 
 social_links:
@@ -20,10 +20,10 @@ social_links:
   discord: ""
   facebook: ""
   flickr: ""
-  github: "https://github.com/cncf/dot-org-hugo-theme"
-  instagram: ""
+  github: ""
+  instagram: "https://www.instagram.com/jst_wollerau"
   landscape: ""
-  linkedin: "https://www.linkedin.com/company/cloud-native-computing-foundation"
+  linkedin: ""
   mastodon: ""
   pinterest: ""
   rss: ""
@@ -37,4 +37,4 @@ social_links:
 # Makes the header sticky on tall screens
 sticky_header: true
 # Enable search in header UI
-show_search: true
+show_search: false

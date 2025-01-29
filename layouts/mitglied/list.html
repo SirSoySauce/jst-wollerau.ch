@@ -1,0 +1,14 @@
+{{ define "main" }}
+{{ .Content }}
+    <div class="team-members">
+        {{ range .Pages }}
+        <div class="team-member" style="order: {{ .Params.priority }}">
+            <img src="{{ .Params.portrait_image_path | absURL }}" alt="Italian Trulli">
+            <h2>{{ .Params.name }}</h2>
+            {{ if .Params.function }}
+            <p>{{ .Params.function }}</p>
+            {{ end }}
+        </div>
+        {{ end }}
+    </div>
+{{ end }}

@@ -9,8 +9,8 @@ de:
     ### accessibility ###
     accessibility:
       skip_text: "Skip to content"
-      help_text: "Accessibility Statement"
-      help_url: "/example-page/"
+      help_text: "Impressum"
+      help_url: "/impressum/"
     ### calls to action ###
     main_cta:
       text: "Kontakt"

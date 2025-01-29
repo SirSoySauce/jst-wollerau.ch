@@ -2,6 +2,7 @@
 title: Über Uns
 description: "Das Jungturner Service Team Wollerau stellt sich vor: ein engagiertes Team, welches durch Serviceleistungen Gemeinschaftsprojekte und Aktivitäten finanziert." 
 showHeader: false
+url: "/"
 ---
 
 {{< columns count=2 >}}

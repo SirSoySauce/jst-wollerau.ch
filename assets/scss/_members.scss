@@ -9,6 +9,10 @@
     max-width: 100%;
     flex: 0 0 100%;
 
+    img {
+      max-width: 100%;
+    }
+
     @media (min-width: $min-desktop) {
       width: calc(100% / 3 - (64px / 3));
       max-width: calc(100% / 3 - (64px / 3));

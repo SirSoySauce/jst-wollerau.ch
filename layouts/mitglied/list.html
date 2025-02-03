@@ -3,7 +3,15 @@
     <div class="team-members">
         {{ range .Pages }}
         <div class="team-member" style="order: {{ .Params.priority }}">
-            <img src="{{ .Params.portrait_image_path | absURL }}" alt="Italian Trulli">
+
+            {{ $image := resources.Get (.Params.portrait_image_path) }}
+            {{ $image := $image.Resize "800x jpg q75 picture" }}
+            {{ $imageWebp := $image.Resize "800x webp q75 picture" }}
+            <picture>
+                <source srcset="{{ $imageWebp.RelPermalink }}">
+                <img src="{{ $image.RelPermalink }}" loading="lazy" alt="{{ .Params.name }} Portrait">
+            </picture>
+
             <h2>{{ .Params.name }}</h2>
             {{ if .Params.function }}
             <p>{{ .Params.function }}</p>

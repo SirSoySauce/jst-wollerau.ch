@@ -1,6 +1,6 @@
 ---
 title: Kontakt
-description: Search this site using Pagefind
+description: "Übersicht über die Kontaktmöglichkeiten des Jungturner Service Teams"
 ---
 
 Bitte kontaktieren Sie uns für Anfragen direkt mit einer E-Mail an info@jst-wollerau.ch.

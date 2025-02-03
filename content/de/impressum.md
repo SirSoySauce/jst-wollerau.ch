@@ -1,5 +1,6 @@
 ---
 title: Impressum
+noindex: true
 ---
 
 **Verantwortliche Instanz:**<br>

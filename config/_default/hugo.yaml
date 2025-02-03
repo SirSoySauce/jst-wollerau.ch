@@ -2,19 +2,22 @@
 # Your theme name
 theme: "dot-org-hugo-theme"
 # Title of your website (required).
-title: "Dot Org Theme Demo"
+title: "JST Wollerau"
 # Default time zone for time stamps; use any valid tz database name: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List
 timeZone: "Europe/Zurich"
 
 ######################## i18n ####################
 # Auto-detect Chinese/Japanese/Korean Languages in the content. see: https://gohugo.io/getting-started/configuration/#hascjklanguage
-hasCJKLanguage: true
+hasCJKLanguage: false
 # Set default content directory for multilingual
 contentDir: content/de/
 # Set fallback if international version is not available
 defaultContentLanguage: de
 # Set the default language as the root rather than in folder i.e. don't use /en/
 defaultContentLanguageInSubdir: false
+disableKinds:
+  - rss
+  - taxonomy
 
 ######################## privacy & speed ####################
 # Enable do not track, no cookies on Video embeds

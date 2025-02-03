@@ -1,5 +1,5 @@
 ---
 title: "Team"
-description: "Frequently Asked Questions"
+description: "Alle Mitglieder des Jungturner Service Teams"
 url: "/team/"
 ---

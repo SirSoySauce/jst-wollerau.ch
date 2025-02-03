@@ -8,7 +8,7 @@ de:
     description: "Site Description"
     ### accessibility ###
     accessibility:
-      skip_text: "Skip to content"
+      skip_text: "Impressum"
       help_text: "Impressum"
       help_url: "/impressum/"
     ### calls to action ###
@@ -23,7 +23,3 @@ de:
       name: "Team"
       url: "/team/"
       weight: 1
-    - identifier: "blog"
-      name: "Blog"
-      url: "/blog/"
-      weight: 2

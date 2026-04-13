@@ -1,0 +1,47 @@
+name: Deploy Hugo site
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    env:
+      HUGO_VERSION: "0.148.1"
+      FTP_PORT: ${{ vars.FTP_PORT || '21' }}
+      FTP_TARGET_DIR: ${{ vars.FTP_TARGET_DIR || '/' }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: ${{ env.HUGO_VERSION }}
+          extended: true
+
+      - name: Build
+        run: hugo --minify
+
+      - name: Deploy via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          port: ${{ env.FTP_PORT }}
+          protocol: ftps
+          local-dir: public/
+          server-dir: ${{ env.FTP_TARGET_DIR }}
+
+      - name: Deployment notes
+        if: ${{ always() }}
+        run: |
+          echo "Required secrets: FTP_HOST, FTP_USER, FTP_PASSWORD"
+          echo "Optional variables: FTP_PORT (default 21), FTP_TARGET_DIR (default /)"
+          echo "FTPS enabled via protocol: ftps"

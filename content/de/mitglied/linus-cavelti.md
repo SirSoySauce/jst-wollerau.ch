@@ -1,8 +1,8 @@
 +++
 name = "Linus Cavelti"
-function = "Chef du Service"
+function = "Aktuar / Chef du Service"
 portrait_image_path = "/img/linus_cavelti.jpg"
-priority = 5
+priority = 3
 [build]
   publishResources = false
   render = 'never'

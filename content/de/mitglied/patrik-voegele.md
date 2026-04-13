@@ -1,8 +1,8 @@
 +++
 name = "Patrik Vögele"
-function = "Revisor"
+function = ""
 portrait_image_path = "/img/patrik_voegele.jpg"
-priority = 4
+priority = 99
 [build]
   publishResources = false
   render = 'never'
